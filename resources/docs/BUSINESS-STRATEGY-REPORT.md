@@ -176,7 +176,7 @@ Based on industry research from the Energy Medicine Professional Association and
 |---------|--------------|-------------------|-----------|
 | **Shamanic Healing Session** | $75/hr | **$110/hr** | Four Winds training, extensive modalities, and unique herbal integration justify established-practitioner rates. $75 undervalues her credentials and positions her as entry-level. |
 | **Custom Herbal Tea Blends** | $45 | **$45 – $55** | Good price point. The hand-grown, biodynamic-calendar-aligned process adds value. Consider $55 as demand grows. |
-| **Herb Walks** | $50/walk (2-8 people) | **$50/person (2-4 people)** or **$40/person (5-8 people)** | Per-person pricing better reflects the personalized experience. Group discount incentivizes larger bookings. |
+| **Herb Walks** | $50/walk (2-8 people) | **$40/person (2-8 people)** | Simple flat per-person rate. |
 | **Wedding Officiant** | $200 – $500 | **$350 – $850** | Shamanic wedding ceremonies are rare and deeply meaningful. The spiritual customization, travel, and rehearsal time command premium pricing. |
 | **iTeraCare Terahertz Wand** | Not listed | **$55/session** or **$35 add-on** | Price as standalone service or discounted add-on to shamanic sessions. |
 | **Ear Candling** | Not listed | **$40/session** or **$25 add-on** | Common add-on service in the wellness market. |
