@@ -114,9 +114,6 @@ h1, h2, h3, h4 {
   height: 40px;
 }
 
-.site-logo span {
-  color: var(--color-gold);
-}
 
 .nav-toggle {
   display: none;
@@ -299,13 +296,10 @@ h1, h2, h3, h4 {
   width: 100%;
   max-width: 480px;
   margin-left: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.hero-logo {
-  max-width: 380px;
-  margin-left: auto;
-  filter: drop-shadow(0 10px 40px rgba(107, 39, 55, 0.1));
-}
 
 /* --- Section Styles --- */
 .section {

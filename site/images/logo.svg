@@ -1,107 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <defs>
-    <!-- Radial glow behind the flame -->
-    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
-      <stop offset="0%" stop-color="#c8a25c" stop-opacity="0.3"/>
-      <stop offset="60%" stop-color="#c8a25c" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#c8a25c" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Flame gradient -->
+    <!-- Outer flame gradient -->
     <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
       <stop offset="0%" stop-color="#c8a25c"/>
-      <stop offset="40%" stop-color="#dfc088"/>
+      <stop offset="50%" stop-color="#dfc088"/>
       <stop offset="100%" stop-color="#faf6f0"/>
     </linearGradient>
-    <!-- Inner flame -->
+    <!-- Inner flame gradient -->
     <linearGradient id="innerFlame" x1="0" y1="1" x2="0" y2="0">
       <stop offset="0%" stop-color="#6b2737"/>
-      <stop offset="60%" stop-color="#c8a25c"/>
+      <stop offset="55%" stop-color="#c8a25c"/>
       <stop offset="100%" stop-color="#faf6f0"/>
     </linearGradient>
-    <!-- Circle border gradient -->
-    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+    <!-- Ring gradient -->
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#c8a25c"/>
       <stop offset="50%" stop-color="#dfc088"/>
       <stop offset="100%" stop-color="#c8a25c"/>
     </linearGradient>
+    <!-- Background glow -->
+    <radialGradient id="glow" cx="50%" cy="52%" r="42%">
+      <stop offset="0%" stop-color="#c8a25c" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c8a25c" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <!-- Background glow -->
-  <circle cx="200" cy="210" r="180" fill="url(#glow)"/>
+  <!-- Subtle glow -->
+  <circle cx="60" cy="62" r="50" fill="url(#glow)"/>
 
   <!-- Outer ring -->
-  <circle cx="200" cy="200" r="155" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" opacity="0.6"/>
-  <circle cx="200" cy="200" r="165" fill="none" stroke="url(#ringGrad)" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="60" cy="60" r="52" fill="none" stroke="url(#ring)" stroke-width="2" opacity="0.7"/>
 
-  <!-- Four cardinal direction marks (medicine wheel) -->
+  <!-- Cardinal direction diamonds -->
   <!-- North -->
-  <line x1="200" y1="35" x2="200" y2="48" stroke="#c8a25c" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="60,4 62.5,8 60,12 57.5,8" fill="#c8a25c" opacity="0.8"/>
   <!-- South -->
-  <line x1="200" y1="352" x2="200" y2="365" stroke="#c8a25c" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="60,108 62.5,112 60,116 57.5,112" fill="#c8a25c" opacity="0.8"/>
   <!-- East -->
-  <line x1="352" y1="200" x2="365" y2="200" stroke="#c8a25c" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="108,60 112,62.5 116,60 112,57.5" fill="#c8a25c" opacity="0.8"/>
   <!-- West -->
-  <line x1="35" y1="200" x2="48" y2="200" stroke="#c8a25c" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="4,60 8,62.5 12,60 8,57.5" fill="#c8a25c" opacity="0.8"/>
 
-  <!-- Small diamond at cardinal points -->
-  <!-- North -->
-  <polygon points="200,30 203,35 200,40 197,35" fill="#c8a25c" opacity="0.7"/>
-  <!-- South -->
-  <polygon points="200,360 203,365 200,370 197,365" fill="#c8a25c" opacity="0.7"/>
-  <!-- East -->
-  <polygon points="360,200 365,203 370,200 365,197" fill="#c8a25c" opacity="0.7"/>
-  <!-- West -->
-  <polygon points="30,200 35,203 40,200 35,197" fill="#c8a25c" opacity="0.7"/>
+  <!-- Outer flame shape -->
+  <path d="M60,22
+           C68,40 82,52 84,66
+           C86,82 76,96 60,102
+           C44,96 34,82 36,66
+           C38,52 52,40 60,22Z"
+        fill="url(#flame)" opacity="0.9"/>
 
-  <!-- Central flame / light - outer shape -->
-  <path d="M200,90
-           C215,130 245,155 248,190
-           C252,230 235,265 200,280
-           C165,265 148,230 152,190
-           C155,155 185,130 200,90Z"
-        fill="url(#flame)" opacity="0.85"/>
+  <!-- Inner flame shape -->
+  <path d="M60,38
+           C65,50 75,58 76,68
+           C77,78 71,88 60,92
+           C49,88 43,78 44,68
+           C45,58 55,50 60,38Z"
+        fill="url(#innerFlame)" opacity="0.95"/>
 
-  <!-- Inner flame -->
-  <path d="M200,130
-           C210,155 228,170 230,195
-           C232,220 220,245 200,255
-           C180,245 168,220 170,195
-           C172,170 190,155 200,130Z"
-        fill="url(#innerFlame)" opacity="0.9"/>
-
-  <!-- Bright center point -->
-  <ellipse cx="200" cy="210" rx="12" ry="16" fill="#faf6f0" opacity="0.6"/>
-  <ellipse cx="200" cy="215" rx="6" ry="8" fill="#ffffff" opacity="0.8"/>
-
-  <!-- Rays of light emanating from flame -->
-  <g opacity="0.15" stroke="#c8a25c" stroke-width="0.75">
-    <line x1="200" y1="85" x2="200" y2="60"/>
-    <line x1="230" y1="100" x2="248" y2="78"/>
-    <line x1="170" y1="100" x2="152" y2="78"/>
-    <line x1="255" y1="135" x2="278" y2="120"/>
-    <line x1="145" y1="135" x2="122" y2="120"/>
-    <line x1="265" y1="175" x2="290" y2="170"/>
-    <line x1="135" y1="175" x2="110" y2="170"/>
-  </g>
-
-  <!-- SHAMAN'S text arc - top -->
-  <path id="textArcTop" d="M90,200 A110,110 0 0,1 310,200" fill="none"/>
-  <text font-family="'Cormorant Garamond', 'Georgia', serif" font-size="18" fill="#6b2737" letter-spacing="8" font-weight="400">
-    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">SHAMAN'S</textPath>
-  </text>
-
-  <!-- LIGHT text arc - bottom -->
-  <path id="textArcBottom" d="M95,215 A110,110 0 0,0 305,215" fill="none"/>
-  <text font-family="'Cormorant Garamond', 'Georgia', serif" font-size="18" fill="#6b2737" letter-spacing="10" font-weight="400">
-    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">LIGHT</textPath>
-  </text>
-
-  <!-- Small decorative dots between text arcs -->
-  <circle cx="93" cy="206" r="2" fill="#c8a25c" opacity="0.6"/>
-  <circle cx="307" cy="206" r="2" fill="#c8a25c" opacity="0.6"/>
-
-  <!-- Bree Kasper subtitle -->
-  <text x="200" y="340" font-family="'Cormorant Garamond', 'Georgia', serif" font-size="11" fill="#8b7355" text-anchor="middle" letter-spacing="4" font-weight="300">BREE KASPER</text>
-  <text x="200" y="358" font-family="'Cormorant Garamond', 'Georgia', serif" font-size="9" fill="#b09a7a" text-anchor="middle" letter-spacing="3" font-weight="300">SHAMANIC ENERGY PRACTITIONER</text>
-
+  <!-- Bright center -->
+  <ellipse cx="60" cy="70" rx="6" ry="8" fill="#faf6f0" opacity="0.7"/>
+  <ellipse cx="60" cy="72" rx="3" ry="4.5" fill="#ffffff" opacity="0.9"/>
 </svg>
